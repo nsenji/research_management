@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 	<record id="view_research_management_form" model="ir.ui.view">
-		<field name="name">
-			research.management.form
-		</field>
-		<field name="model">
-			research.management
-		</field>
+		<field name="name">research.management.form</field>
+		<field name="model">research.management</field>
 		<field name="arch" type="xml">
 			<form string="Research Management">
 				<sheet>
@@ -51,12 +47,8 @@
 		</field>
 	</record>
 	<record id="view_research_management_tree" model="ir.ui.view">
-		<field name="name">
-			research.management.tree
-		</field>
-		<field name="model">
-			research.management
-		</field>
+		<field name="name">research.management.tree	</field>
+		<field name="model">research.management</field>
 		<field name="arch" type="xml">
 			<tree string="Research Projects">
 				<field name="name" />
@@ -69,12 +61,8 @@
 		</field>
 	</record>
 	<record id="view_research_project_kanban" model="ir.ui.view">
-		<field name="name">
-			research.management.kanban
-		</field>
-		<field name="model">
-			research.management
-		</field>
+		<field name="name">research.management.kanban</field>
+		<field name="model">research.management</field>
 		<field name="arch" type="xml">
 			<kanban default_group_by="stage" quick_create="false" class="o_kanban_large_column">
 				<field name="name" />
@@ -108,15 +96,9 @@
 		</field>
 	</record>
 	<record id="action_research_projects" model="ir.actions.act_window">
-		<field name="name">
-			Research Projects
-		</field>
-		<field name="res_model">
-			research.management
-		</field>
-		<field name="view_mode">
-			tree,form,kanban
-		</field>
+		<field name="name">Research Projects</field>
+		<field name="res_model">research.management</field>
+		<field name="view_mode">tree,form,kanban</field>
 		<field name="help" type="html">
 			<p class="o_view_nocontent_smiling_face">
 				No Research Projects Found!
@@ -124,12 +106,8 @@
 		</field>
 	</record>
 	<record id="view_research_milestone_tree" model="ir.ui.view">
-		<field name="name">
-			research.milestone.tree
-		</field>
-		<field name="model">
-			research.milestone
-		</field>
+		<field name="name">research.milestone.tree</field>
+		<field name="model">research.milestone</field>
 		<field name="arch" type="xml">
 			<tree string="Research Milestones">
 				<field name="name" />
@@ -140,15 +118,9 @@
 		</field>
 	</record>
 	<record id="action_research_milestones" model="ir.actions.act_window">
-		<field name="name">
-			Research Milestones
-		</field>
-		<field name="res_model">
-			research.milestone
-		</field>
-		<field name="view_mode">
-			tree,form
-		</field>
+		<field name="name">	Research Milestones	</field>
+		<field name="res_model">research.milestone</field>
+		<field name="view_mode">tree,form</field>
 	</record>
 	<menuitem id="menu_research_management_root" name="Research Management" web_icon="research_management,static/description/icon.png" sequence="135" />
 	<menuitem id="menu_research_projects" name="Research Projects" parent="menu_research_management_root" action="action_research_projects" sequence="1" />
