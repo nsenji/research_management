@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="action_report_research" model="ir.actions.report">
+        <field name="name">Research Project Report</field>
+        <field name="model">research.management</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">research_management.report_research_document</field>
+        <field name="report_file">research_management.report_research_document</field>
+        <field name="binding_model_id" ref="model_research_management"/>
+        <field name="binding_type">report</field>
+    </record>
+</odoo>
