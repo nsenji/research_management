@@ -119,7 +119,7 @@
 		</field>
 	</record>
 	<record id="action_research_milestones" model="ir.actions.act_window">
-		<field name="name">Research Milestones</field>
+		<field name="name">	Research Milestones	</field>
 		<field name="res_model">research.milestone</field>
 		<field name="view_mode">tree,form</field>
 	</record>
